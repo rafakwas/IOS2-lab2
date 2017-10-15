@@ -1,4 +1,4 @@
-//
+	//
 //  ViewController.swift
 //  test1
 //
@@ -14,12 +14,12 @@ class ViewController: UIViewController {
     var length : Int = 0
     var json : [[String:Any]]?
     @IBOutlet var record: UILabel!
+    @IBOutlet var saveButton: UIButton!
     @IBOutlet var titleLabel: UITextField!
     @IBOutlet var authorLabel: UITextField!
     @IBOutlet var genreLabel: UITextField!
     @IBOutlet var productionYearLabel: UITextField!
     @IBOutlet var tracksLabel: UITextField!
-    
     @IBOutlet var removeButton: UIButton!
     var titleTemp : String = ""
     var authorTemp : String = ""
@@ -32,7 +32,12 @@ class ViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        initializeJson()
+        initializeJson(withCompletion: {
+            self.tempRecord(index: 0)
+            DispatchQueue.main.async { [unowned self] in
+                self.updateView();
+            }
+        })
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,33 +67,34 @@ class ViewController: UIViewController {
     }
     
     func updateView() {
-        authorLabel.text = authorTemp
-        titleLabel.text = titleTemp
-        genreLabel.text = genreTemp
-        productionYearLabel.text = productionYearTemp
-        tracksLabel.text = tracksTemp
-        record.text = recordTemp
+        self.authorLabel.text = authorTemp
+        self.titleLabel.text = titleTemp
+        self.genreLabel.text = genreTemp
+        self.productionYearLabel.text = productionYearTemp
+        self.tracksLabel.text = tracksTemp
+        self.record.text = recordTemp
   
-        if (current == 0) {
-            previousButton.isHidden = true
+        if (self.current == 0) {
+            self.previousButton.isHidden = true
         } else {
-            previousButton.isHidden = false
+            self.previousButton.isHidden = false
         }
         
-        if (length == 0) {
-            removeButton.isHidden = true
+        if (self.length == 0) {
+            self.removeButton.isHidden = true
         } else {
-            removeButton.isHidden = false
+            self.removeButton.isHidden = false
         }
         
-        
+        self.saveButton.isHidden = true
     }
     
-    func initializeJson() {
+    func initializeJson(withCompletion completion : @escaping (()->Void)) {
         let urlString = URL(string : "https://isebi.net/albums.php")
         let task = URLSession.shared.dataTask(with: urlString!) {data,response,error in
             self.json = try! JSONSerialization.jsonObject(with : data!) as? [[String:Any]]
             self.length = self.json!.count
+            completion()
         }
         print("initialize json")
         task.resume()
@@ -130,21 +136,40 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func saveRecord(_ sender: Any) {
-        var newElement : [String : Any]
+        var newElement = [String: Any]()
+       
+        titleTemp = titleLabel.text!
+        genreTemp = genreLabel.text!
+        authorTemp = authorLabel.text!
+        productionYearTemp = productionYearLabel.text!
+        tracksTemp = tracksLabel.text!
+        recordTemp = record.text!
+        
         newElement["album"] = titleLabel.text!
         newElement["genre"] = genreLabel.text!
         newElement["artist"] =  authorLabel.text!
-        newElement["year"] = productionYearLabel.text!
-        newElement["tracks"] = tracksLabel.text!
+        newElement["year"] = (productionYearLabel.text! as NSString).integerValue
+        newElement["tracks"] = (tracksLabel.text! as NSString).integerValue
         if (current == length) {
             json?.append(newElement)
+            length = length + 1
+            recordTemp = "Record \(current) z \(length)"
         } else {
-            
+            json![current]["album"] = newElement["album"]
+            json![current]["genre"] = newElement["genre"]
+            json![current]["artist"] = newElement["artist"]
+            json![current]["year"] = newElement["year"]
+            json![current]["tracks"] = newElement["tracks"]
         }
+        
+        DispatchQueue.main.async {
+            self.updateView()
+        }
+        
     }
     
     func tempRecord(index : Int) {
-        //normalny rekord
+        print("temp record")
         let currentRecord = json![index]
         self.titleTemp = currentRecord["album"] as! String
         self.genreTemp = currentRecord["genre"] as! String
@@ -153,7 +178,7 @@ class ViewController: UIViewController {
         self.authorTemp = currentRecord["artist"] as! String
         let track = currentRecord["tracks"] as! Int
         self.tracksTemp = "\(track)"
-        self.recordTemp = "Rekord \(current) z \(length)"
+        self.recordTemp = "Rekord \(current) z \(length-1)"
     }
     
     func emptyNewRecord() {
@@ -164,4 +189,20 @@ class ViewController: UIViewController {
         self.tracksTemp = ""
         self.recordTemp = "Nowy rekord"
     }
-}
+    
+    @IBAction func onTitleChanged(_ sender: Any) {
+            saveButton.isHidden = false
+    }
+    @IBAction func onArtistChanged(_ sender: Any) {
+        saveButton.isHidden = false
+    }
+    @IBAction func onGenreChanged(_ sender: Any) {
+        saveButton.isHidden = false
+    }
+    @IBAction func onYearChanged(_ sender: Any) {
+        saveButton.isHidden = false
+    }
+    @IBAction func onTracksChanged(_ sender: Any) {
+        saveButton.isHidden = false
+    }
+    }

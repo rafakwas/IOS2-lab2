@@ -66,6 +66,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onTitleChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="nav-7w-HqS"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wUu-77-vzs">
                                 <rect key="frame" x="203" y="177" width="97" height="30"/>
@@ -73,6 +76,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onArtistChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="LBJ-bb-Fp7"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-0r-yAe">
                                 <rect key="frame" x="203" y="232" width="97" height="30"/>
@@ -80,6 +86,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onGenreChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="FvE-AA-QpY"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HhL-JP-KOP">
                                 <rect key="frame" x="203" y="290" width="97" height="30"/>
@@ -87,6 +96,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onYearChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="p5u-hh-6j9"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJ2-PW-K44">
                                 <rect key="frame" x="203" y="350" width="97" height="30"/>
@@ -94,6 +106,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onTracksChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="rsV-KO-zYT"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Rafał Kwaśnik" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PP3-CY-bVm">
                                 <rect key="frame" x="115" y="49" width="110" height="30"/>
@@ -153,6 +168,7 @@
                         <outlet property="productionYearLabel" destination="HhL-JP-KOP" id="mtq-eE-M6h"/>
                         <outlet property="record" destination="nJz-bH-8tV" id="tkt-HD-fHM"/>
                         <outlet property="removeButton" destination="QmS-2d-u2b" id="1Zb-ZU-Kio"/>
+                        <outlet property="saveButton" destination="eKg-D2-nfF" id="aDH-T0-uO3"/>
                         <outlet property="title" destination="WgS-KB-W6B" id="Ee9-p8-oad"/>
                         <outlet property="titleLabel" destination="WgS-KB-W6B" id="WIW-np-F9C"/>
                         <outlet property="tracksLabel" destination="pJ2-PW-K44" id="FHm-YO-zWZ"/>
