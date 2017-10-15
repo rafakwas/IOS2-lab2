@@ -31,9 +31,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VZ-gX-NFz">
-                                <rect key="frame" x="203" y="553" width="156" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VZ-gX-NFz">
+                                <rect key="frame" x="245" y="553" width="114" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Nastepny">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,18 +119,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z5-3c-Jfg">
-                                <rect key="frame" x="16" y="553" width="163" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Poprzedni">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="previous:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAD-2x-zXj"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rekord" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJz-bH-8tV">
                                 <rect key="frame" x="16" y="424" width="185" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -139,9 +126,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQZ-4a-cry">
-                                <rect key="frame" x="252" y="627" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQZ-4a-cry">
+                                <rect key="frame" x="256" y="627" width="103" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Nowy rekord">
@@ -151,9 +137,8 @@
                                     <action selector="newRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="93V-Q8-UEE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKg-D2-nfF">
-                                <rect key="frame" x="144" y="627" width="66" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKg-D2-nfF">
+                                <rect key="frame" x="145.5" y="627" width="71.5" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Zapisz">
@@ -163,9 +148,8 @@
                                     <action selector="saveRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0oM-85-8ye"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmS-2d-u2b">
-                                <rect key="frame" x="16" y="627" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmS-2d-u2b">
+                                <rect key="frame" x="16" y="627" width="71.5" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Usuń">
@@ -176,8 +160,37 @@
                                     <action selector="deleteRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XNF-ER-bvY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z5-3c-Jfg">
+                                <rect key="frame" x="16" y="553" width="114" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Poprzedni">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="previous:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAD-2x-zXj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QmS-2d-u2b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7ec-KH-MxD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQZ-4a-cry" secondAttribute="trailing" constant="16" id="CXq-Nf-rJg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5VZ-gX-NFz" secondAttribute="trailing" constant="16" id="G6C-es-GiO"/>
+                            <constraint firstItem="1z5-3c-Jfg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KRE-LQ-HbQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eKg-D2-nfF" secondAttribute="bottom" constant="10" id="QVw-Ag-HAs"/>
+                            <constraint firstItem="eKg-D2-nfF" firstAttribute="leading" secondItem="QmS-2d-u2b" secondAttribute="trailing" constant="58" id="RPS-rD-aUc"/>
+                            <constraint firstItem="PQZ-4a-cry" firstAttribute="width" secondItem="eKg-D2-nfF" secondAttribute="width" constant="31.5" id="UTm-Vh-BJe"/>
+                            <constraint firstItem="PQZ-4a-cry" firstAttribute="leading" secondItem="eKg-D2-nfF" secondAttribute="trailing" constant="39" id="V2Y-vT-rrk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QmS-2d-u2b" secondAttribute="bottom" constant="10" id="WzN-aG-jby"/>
+                            <constraint firstItem="5VZ-gX-NFz" firstAttribute="leading" secondItem="1z5-3c-Jfg" secondAttribute="trailing" constant="115" id="bOv-wd-geQ"/>
+                            <constraint firstItem="1z5-3c-Jfg" firstAttribute="width" secondItem="5VZ-gX-NFz" secondAttribute="width" id="itA-GD-LTN"/>
+                            <constraint firstItem="QmS-2d-u2b" firstAttribute="width" secondItem="eKg-D2-nfF" secondAttribute="width" id="jUf-IL-ifp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PQZ-4a-cry" secondAttribute="bottom" constant="10" id="njM-Kg-IT4"/>
+                            <constraint firstItem="PQZ-4a-cry" firstAttribute="top" secondItem="5VZ-gX-NFz" secondAttribute="bottom" constant="44" id="oz3-LE-Aaz"/>
+                            <constraint firstItem="QmS-2d-u2b" firstAttribute="width" secondItem="eKg-D2-nfF" secondAttribute="width" id="pMz-rR-JfZ"/>
+                            <constraint firstItem="QmS-2d-u2b" firstAttribute="top" secondItem="1z5-3c-Jfg" secondAttribute="bottom" constant="44" id="qWe-yD-ONC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
