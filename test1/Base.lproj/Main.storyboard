@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VZ-gX-NFz">
-                                <rect key="frame" x="245" y="553" width="114" height="30"/>
+                                <rect key="frame" x="441.5" y="910" width="310.5" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Nastepny">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,13 +28,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Rafał Kwaśnik" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PP3-CY-bVm">
-                                <rect key="frame" x="132" y="0.0" width="110" height="30"/>
+                                <rect key="frame" x="132" y="0.0" width="503" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQZ-4a-cry">
-                                <rect key="frame" x="256" y="627" width="103" height="30"/>
+                                <rect key="frame" x="518" y="984" width="234" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Nowy rekord">
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKg-D2-nfF">
-                                <rect key="frame" x="145.5" y="627" width="71.5" height="30"/>
+                                <rect key="frame" x="276.5" y="984" width="202.5" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Zapisz">
@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmS-2d-u2b">
-                                <rect key="frame" x="16" y="627" width="71.5" height="30"/>
+                                <rect key="frame" x="16" y="984" width="202.5" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Usuń">
@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z5-3c-Jfg">
-                                <rect key="frame" x="16" y="553" width="114" height="30"/>
+                                <rect key="frame" x="16" y="910" width="310.5" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Poprzedni">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-KB-W6B">
-                                <rect key="frame" x="140" y="38" width="235" height="30"/>
+                                <rect key="frame" x="140" y="38" width="628" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -118,7 +118,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wUu-77-vzs">
-                                <rect key="frame" x="140" y="76" width="235" height="30"/>
+                                <rect key="frame" x="140" y="76" width="628" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -127,7 +127,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-0r-yAe">
-                                <rect key="frame" x="140" y="114" width="235" height="30"/>
+                                <rect key="frame" x="140" y="114" width="628" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -136,7 +136,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HhL-JP-KOP">
-                                <rect key="frame" x="140" y="152" width="235" height="30"/>
+                                <rect key="frame" x="140" y="152" width="628" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -145,7 +145,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJ2-PW-K44">
-                                <rect key="frame" x="140" y="190" width="235" height="30"/>
+                                <rect key="frame" x="140" y="190" width="628" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -154,7 +154,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rekord" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJz-bH-8tV">
-                                <rect key="frame" x="0.0" y="222" width="54" height="20"/>
+                                <rect key="frame" x="0.0" y="230" width="54" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -172,6 +172,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQZ-4a-cry" secondAttribute="trailing" constant="16" id="CXq-Nf-rJg"/>
                             <constraint firstItem="kab-df-LIE" firstAttribute="leading" secondItem="RXV-Xm-NjA" secondAttribute="leading" id="FoX-fQ-gdz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5VZ-gX-NFz" secondAttribute="trailing" constant="16" id="G6C-es-GiO"/>
+                            <constraint firstItem="nJz-bH-8tV" firstAttribute="top" secondItem="kab-df-LIE" secondAttribute="bottom" constant="16" id="Iba-g3-fe2"/>
                             <constraint firstItem="HhL-JP-KOP" firstAttribute="leading" secondItem="7lH-cW-20n" secondAttribute="trailing" constant="8" symbolic="YES" id="JAF-1A-XHA"/>
                             <constraint firstItem="1z5-3c-Jfg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KRE-LQ-HbQ"/>
                             <constraint firstItem="wUu-77-vzs" firstAttribute="top" secondItem="WgS-KB-W6B" secondAttribute="bottom" constant="8" symbolic="YES" id="KYt-De-4ts"/>
@@ -200,7 +201,6 @@
                             <constraint firstItem="HhL-JP-KOP" firstAttribute="baseline" secondItem="7lH-cW-20n" secondAttribute="baseline" id="kAQ-oF-BYK"/>
                             <constraint firstItem="RXV-Xm-NjA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kXd-Ky-0pI"/>
                             <constraint firstItem="kab-df-LIE" firstAttribute="trailing" secondItem="RXV-Xm-NjA" secondAttribute="trailing" id="kia-FF-Rdd"/>
-                            <constraint firstItem="nJz-bH-8tV" firstAttribute="top" secondItem="kab-df-LIE" secondAttribute="bottom" constant="8" symbolic="YES" id="lF5-B4-c6s"/>
                             <constraint firstItem="wUu-77-vzs" firstAttribute="leading" secondItem="GIw-th-rlk" secondAttribute="trailing" constant="8" symbolic="YES" id="nbk-zx-NJy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PQZ-4a-cry" secondAttribute="bottom" constant="10" id="njM-Kg-IT4"/>
                             <constraint firstItem="wUu-77-vzs" firstAttribute="baseline" secondItem="GIw-th-rlk" secondAttribute="baseline" id="oLP-md-nzh"/>
