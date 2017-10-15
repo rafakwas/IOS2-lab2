@@ -152,6 +152,7 @@
                         <outlet property="previousButton" destination="1z5-3c-Jfg" id="NdB-YT-Mgl"/>
                         <outlet property="productionYearLabel" destination="HhL-JP-KOP" id="mtq-eE-M6h"/>
                         <outlet property="record" destination="nJz-bH-8tV" id="tkt-HD-fHM"/>
+                        <outlet property="removeButton" destination="QmS-2d-u2b" id="1Zb-ZU-Kio"/>
                         <outlet property="title" destination="WgS-KB-W6B" id="Ee9-p8-oad"/>
                         <outlet property="titleLabel" destination="WgS-KB-W6B" id="WIW-np-F9C"/>
                         <outlet property="tracksLabel" destination="pJ2-PW-K44" id="FHm-YO-zWZ"/>

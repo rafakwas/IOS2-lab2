@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet var productionYearLabel: UITextField!
     @IBOutlet var tracksLabel: UITextField!
     
+    @IBOutlet var removeButton: UIButton!
     var titleTemp : String = ""
     var authorTemp : String = ""
     var genreTemp : String = ""
@@ -74,6 +75,12 @@ class ViewController: UIViewController {
             previousButton.isHidden = false
         }
         
+        if (length == 0) {
+            removeButton.isHidden = true
+        } else {
+            removeButton.isHidden = false
+        }
+        
         
     }
     
@@ -123,7 +130,17 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func saveRecord(_ sender: Any) {
-        
+        var newElement : [String : Any]
+        newElement["album"] = titleLabel.text!
+        newElement["genre"] = genreLabel.text!
+        newElement["artist"] =  authorLabel.text!
+        newElement["year"] = productionYearLabel.text!
+        newElement["tracks"] = tracksLabel.text!
+        if (current == length) {
+            json?.append(newElement)
+        } else {
+            
+        }
     }
     
     func tempRecord(index : Int) {
